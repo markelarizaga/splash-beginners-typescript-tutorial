@@ -1,45 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`tsc > Should have the correct TypeScript errors 1`] = `
-",src/01-number.problem.ts(3,31): error TS7006: Parameter 'a' implicitly has an 'any' type.
-src/01-number.problem.ts(3,34): error TS7006: Parameter 'b' implicitly has an 'any' type.
-src/02-object-param.problem.ts(3,31): error TS7006: Parameter 'params' implicitly has an 'any' type.
-src/03-optional-properties.problem.ts(11,24): error TS2345: Argument of type '{ first: string; }' is not assignable to parameter of type '{ first: string; last: string; }'.
-  Property 'last' is missing in type '{ first: string; }' but required in type '{ first: string; last: string; }'.
-src/04-optional-params.problem.ts(11,16): error TS2554: Expected 2 arguments, but got 1.
-src/05-assigning-types-to-variables.problem.ts(21,20): error TS2345: Argument of type '{}' is not assignable to parameter of type 'User'.
-  Type '{}' is missing the following properties from type 'User': id, firstName, lastName, isAdmin
-src/06-unions.problem.ts(18,3): error TS2578: Unused '@ts-expect-error' directive.
-src/07-arrays.problem.ts(19,3): error TS2739: Type '{ id: number; title: string; }[]' is missing the following properties from type 'Post': id, title
-src/08-function-return-type-annotations.problem.ts(27,15): error TS2339: Property 'id' does not exist on type '{}'.
-src/08-function-return-type-annotations.problem.ts(28,15): error TS2339: Property 'firstName' does not exist on type '{}'.
-src/08-function-return-type-annotations.problem.ts(29,15): error TS2339: Property 'lastName' does not exist on type '{}'.
-src/08-function-return-type-annotations.problem.ts(30,15): error TS2339: Property 'role' does not exist on type '{}'.
-src/08-function-return-type-annotations.problem.ts(32,15): error TS2339: Property 'posts' does not exist on type '{}'.
-src/08-function-return-type-annotations.problem.ts(33,15): error TS2339: Property 'posts' does not exist on type '{}'.
-src/09-promises.problem.ts(12,45): error TS1064: The return type of an async function or method must be the global Promise<T> type. Did you mean to write 'Promise<LukeSkywalker>'?
-src/10-set.problem.ts(15,3): error TS2578: Unused '@ts-expect-error' directive.
-src/10-set.problem.ts(22,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/11-record.problem.ts(7,5): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
-  No index signature with a parameter of type 'string' was found on type '{}'.
-src/11-record.problem.ts(11,12): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
-  No index signature with a parameter of type 'string' was found on type '{}'.
-src/11-record.problem.ts(26,10): error TS7053: Element implicitly has an 'any' type because expression of type '\\"123\\"' can't be used to index type '{}'.
-  Property '123' does not exist on type '{}'.
-src/11-record.problem.ts(35,10): error TS7053: Element implicitly has an 'any' type because expression of type '\\"123\\"' can't be used to index type '{}'.
-  Property '123' does not exist on type '{}'.
-src/13-catch-blocks.problem.ts(9,12): error TS18046: 'e' is of type 'unknown'.
-src/15-intersection.problem.ts(34,13): error TS18046: 'userAndPosts' is of type 'unknown'.
-src/16-omit-and-pick.problem.ts(16,22): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/17-function-types.problem.ts(8,5): error TS18046: 'onFocusChange' is of type 'unknown'.
-src/17-function-types.problem.ts(12,5): error TS18046: 'onFocusChange' is of type 'unknown'.
-src/17-function-types.problem.ts(16,14): error TS7006: Parameter 'isFocused' implicitly has an 'any' type.
-src/17-function-types.problem.ts(19,24): error TS2344: Type 'false' does not satisfy the constraint 'true'.
-src/18-function-types-with-promises.problem.ts(13,32): error TS18046: 'createUser' is of type 'unknown'.
-src/18-function-types-with-promises.problem.ts(15,22): error TS18046: 'getUser' is of type 'unknown'.
-src/18-function-types-with-promises.problem.ts(23,12): error TS7006: Parameter 'id' implicitly has an 'any' type.
-,"
-`;
+exports[`tsc > Should have the correct TypeScript errors 1`] = `""`;
 
 exports[`vitest > Should have the correct Vitest errors 1`] = `
 {
@@ -247,21 +208,15 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [
-            "expected undefined to deeply equal 1",
-          ],
+          "failureMessages": [],
           "fullName": " Should get the user id",
-          "location": {
-            "column": 34,
-            "line": 21,
-          },
-          "status": "failed",
+          "status": "passed",
           "title": "Should get the user id",
         },
       ],
       "message": "",
       "name": "src/05-assigning-types-to-variables.problem.ts",
-      "status": "failed",
+      "status": "passed",
     },
     {
       "assertionResults": [
@@ -315,21 +270,15 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [
-            "expected undefined to be type of 'number'",
-          ],
+          "failureMessages": [],
           "fullName": " Should return a valid user",
-          "location": {
-            "column": 19,
-            "line": 27,
-          },
-          "status": "failed",
+          "status": "passed",
           "title": "Should return a valid user",
         },
       ],
       "message": "",
       "name": "src/08-function-return-type-annotations.problem.ts",
-      "status": "failed",
+      "status": "passed",
     },
     {
       "assertionResults": [
@@ -545,36 +494,24 @@ exports[`vitest > Should have the correct Vitest errors 1`] = `
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [
-            "expected undefined to deeply equal 20",
-          ],
+          "failureMessages": [],
           "fullName": " Should return the amount when passed an object",
-          "location": {
-            "column": 40,
-            "line": 6,
-          },
-          "status": "failed",
+          "status": "passed",
           "title": "Should return the amount when passed an object",
         },
         {
           "ancestorTitles": [
             "",
           ],
-          "failureMessages": [
-            "expected undefined to deeply equal 20",
-          ],
+          "failureMessages": [],
           "fullName": " Should return the amount when passed a number",
-          "location": {
-            "column": 28,
-            "line": 10,
-          },
-          "status": "failed",
+          "status": "passed",
           "title": "Should return the amount when passed a number",
         },
       ],
       "message": "",
       "name": "src/12-typeof-narrowing.problem.ts",
-      "status": "failed",
+      "status": "passed",
     },
     {
       "assertionResults": [
